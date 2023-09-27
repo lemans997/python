@@ -11,6 +11,8 @@ data = res.json()
 
 items = data['response']['body']['items']
 
+# requests.get(URL).json()['response']['body']
+
 for item in items:
     # print(item)
     if item ['stationName'] == '강남구':
